@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'alexbush': ['Alex Brush', 'cursive'],
+        'mont' : ['Montserrat','sans-serif']
+      },
+    },
   },
   plugins: [],
 }

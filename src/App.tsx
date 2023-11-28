@@ -8,7 +8,7 @@ import Footer from "./Components/Footer"
 function App() {
 
   return (
-    <div className="w-screen h-screen bg-slate-500">
+    <div className="w-screen h-screen bg-gradient-to-t from-amber-500 to-orange-400 font-mont">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
