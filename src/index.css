@@ -3,3 +3,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .item{
+        @apply relative
+    }
+
+    .item::after{
+        @apply content-[''] bg-white h-[3px] w-[0%] left-0 -bottom-[5px] absolute duration-300
+    }
+
+    .item:hover::after{
+        @apply w-[100%]
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+}
